@@ -1,6 +1,6 @@
 Bibliotecas:
 
-#include <winsock.h>
+include winsock.h
 
 Estruturas:
 
