@@ -1,6 +1,3 @@
-# trabalhoRedes
-Trabalho de redes I socket em C
-
 Bibliotecas:
 
 #include <winsock.h>
@@ -17,7 +14,7 @@ WSAStartup(MAKEWORD(1,1),&data): responsavel por fazer o windows iniciar a dll e
 
 Cliente:
 connect(winsock,(SOCKADDR*)&sock,sizeof(sock)): responsável pela conexão de seu socket cliente, com um servidor.
-socket(AF_INET,SOCKET_STREAM,0)): inicializa o socket recebendo como parametro o nome do protocol e o numero.
+socket(AF_INET,SOCK_STREAM,0)): inicializa o socket recebendo como parametro o nome do protocol e o numero.
 
 Servidor:
 bind(winsock,(SOCKADDR*)&sock,sizeof(sock)) : função serve para associar uma porta na máquina local para um determinado socket.
